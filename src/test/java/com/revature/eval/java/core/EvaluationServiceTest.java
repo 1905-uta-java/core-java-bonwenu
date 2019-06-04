@@ -465,31 +465,31 @@ public class EvaluationServiceTest {
 	 * Question 13
 	 ******************************************************************/
 	@Test
-	@Ignore
+	//@Ignore
 	public void validIsbnNumber() {
 		assertTrue(evaluationService.isValidIsbn("3-598-21508-8"));
 	}
 
 	@Test
-	@Ignore
+	//@Ignore
 	public void invalidIsbnCheckDigit() {
 		assertFalse(evaluationService.isValidIsbn("3-598-21508-9"));
 	}
 
 	@Test
-	@Ignore
+	//@Ignore
 	public void validIsbnNumberWithCheckDigitOfTen() {
 		assertTrue(evaluationService.isValidIsbn("3-598-21507-X"));
 	}
 
 	@Test
-	@Ignore
+	//@Ignore
 	public void checkDigitIsACharacterOtherThanX() {
 		assertFalse(evaluationService.isValidIsbn("3-598-21507-A"));
 	}
 
 	@Test
-	@Ignore
+	//@Ignore
 	public void invalidCharacterInIsbn() {
 		assertFalse(evaluationService.isValidIsbn("3-598-2K507-0"));
 	}
@@ -537,31 +537,31 @@ public class EvaluationServiceTest {
 	 * Question 15
 	 ******************************************************************/
 	@Test
-	@Ignore
+	//@Ignore
 	public void testSingleAddition1() {
 		assertEquals(2, evaluationService.solveWordProblem("What is 1 plus 1?"));
 	}
 
 	@Test
-	@Ignore
+	//@Ignore
 	public void testSingleAdditionWithNegativeNumbers() {
 		assertEquals(-11, evaluationService.solveWordProblem("What is -1 plus -10?"));
 	}
 
 	@Test
-	@Ignore
+	//@Ignore
 	public void testSingleSubtraction() {
 		assertEquals(16, evaluationService.solveWordProblem("What is 4 minus -12?"));
 	}
 
 	@Test
-	@Ignore
+	//@Ignore
 	public void testSingleMultiplication() {
 		assertEquals(-75, evaluationService.solveWordProblem("What is -3 multiplied by 25?"));
 	}
 
 	@Test
-	@Ignore
+	//@Ignore
 	public void testSingleDivision() {
 		assertEquals(-11, evaluationService.solveWordProblem("What is 33 divided by -3?"));
 	}
